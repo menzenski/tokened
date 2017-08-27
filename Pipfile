@@ -1,8 +1,8 @@
-[packages]
-requests = "==2.18.4"
-pyPDF2 = "==1.26.0"
-
 [dev-packages]
 pytest = "==3.0.7"
 pytest-logging = "==2015.11.4"
 pytest-flake8 = "==0.6"
+
+[packages]
+requests = "==2.18.4"
+PyPDF2 = "==1.26.0"
