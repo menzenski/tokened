@@ -1,7 +1,7 @@
 import logging
 import logging.config
 
-logging_config = {
+default_logging_config = {
     'version': 1,
     'disable_existing_loggers': True,
     'formatters': {
@@ -30,5 +30,5 @@ logging_config = {
 }
 
 
-def configure_logging():
+def configure_logging(logging_config=default_logging_config):
     logging.config.dictConfig(logging_config)
