@@ -1,6 +1,6 @@
 [packages]
-requests = "*"
-pyPDF2 = "*"
+requests = "==2.18.4"
+pyPDF2 = "==1.26.0"
 
 [dev-packages]
 pytest = "==3.0.7"
