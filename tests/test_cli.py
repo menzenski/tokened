@@ -1,6 +1,6 @@
 import pytest
 from click.testing import CliRunner
-from tokened import cli
+from tokened import cli, __version__
 
 
 @pytest.fixture
@@ -27,3 +27,10 @@ def test_cli_with_arg(runner):
     assert result.exit_code == 0
     assert not result.exception
     assert result.output.strip() == 'Hello, Matt.'
+
+
+def test_cli_version(runner):
+    result = runner.invoke(cli.main, ['--version'])
+    assert result.exit_code == 0
+    assert not result.exception
+    assert __version__ in result.output
