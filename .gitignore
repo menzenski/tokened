@@ -8,3 +8,6 @@ build/
 .coverage
 .cache/
 .eggs/
+
+# sources
+tokened/sources/local/
